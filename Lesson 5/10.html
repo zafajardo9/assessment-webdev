@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homer Simpson</title>
+    </head>
+
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
+        img {
+            width: 350px; 
+            height: auto;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .btn {
+            padding: 30px;
+        }
+        .btn button {
+
+            width: 90px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+        
+        }
+    </style>
+    <body>
+        <div class="center">
+<!-- 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 200px;
+height: 100px;
+background-color: blue; 
+-->
+                <img src="https://i.imgflip.com/6g9zqz.jpg" id="homer" onmouseover="showAlert()" >
+                
+                <div class="btn">
+                    <button onclick="changeColor('red')">Red</button>
+                    <button onclick="changeColor('yellow')">Yellow</button>
+                    <button onclick="changeColor('green')">Green</button>
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('silver')">Silver</button>
+                </div>
+
+                <a href="#" onclick="goToRandomSite()">CLICK ME!</a>
+        
+        </div>
+
+
+        <script>
+        function showAlert() {
+            alert("Duh, you are hovering!!");
+        }
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+        
+        // Last
+        function goToRandomSite() {
+        var sites = [
+          'http://slashdot.org/',
+          'http://www.thinkgeek.com/', // di gumagana ang site
+          'http://despair.com/'
+        ];
+
+        var index = Math.floor(Math.random() * sites.length);
+        var url = sites[index];
+
+        window.location.href = url;
+      }
+        </script>
+    </body>
+</html>

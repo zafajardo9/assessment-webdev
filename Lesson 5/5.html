@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fibonacci Series</title>
+  </head>
+  <body>
+    <h1>Fibonacci Series</h1>
+    <p id="output"></p>
+    
+    <script>
+    //In this code, I'll just display it in DOM using getElementById
+    //di ko gagawin yung ginawa ni maam
+      // Define a function to generate the Fibonacci series
+    function fibonacci(n) {
+        // Initialize an empty array to store the series
+        var series = [];
+        // Add the first two numbers of the series
+        series.push(1);
+        series.push(1);
+        // Generate the rest of the series
+    for (var i = 2; i < n; i++) {
+        var next = series[i - 1] + series[i - 2];
+        series.push(next);
+    }
+        // Return the series
+        return series;
+    }
+      // Generate the Fibonacci series from 1 to 10
+    var series = fibonacci(10);
+      // Print the series to the page
+    var output = document.getElementById("output");
+    for (var i = 0; i < series.length; i++) {
+        output.innerHTML += series[i] + "  ";
+    }
+    </script>
+  </body>
+</html>

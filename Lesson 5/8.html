@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>8</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <p>Enter a temperature:</p>
+    <div>
+      <input type="text" id="temp">
+      <select id="units">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+      </select>
+    </div>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+
+
+    <script>
+    function celsiusToFahrenheit(temp) {
+        return (temp * 9 / 5) + 32;
+    }
+
+    function fahrenheitToCelsius(temp) {
+        return (temp - 32) * 5 / 9;
+    }
+
+    function convert() {
+        // Get the temperature and units from the form
+        var temp = document.getElementById("temp").value;
+        var units = document.getElementById("units").value;
+
+        // Convert the temperature to the opposite units
+        if (units == "C") {
+            var result = celsiusToFahrenheit(temp);
+            var resultUnits = "°F";
+        } else {
+            var result = fahrenheitToCelsius(temp);
+            var resultUnits = "°C";
+        }
+
+        document.getElementById("result").innerHTML = temp + "°" + units + " is " + result + resultUnits;
+
+    }
+    </script>
+</body>
+</html>

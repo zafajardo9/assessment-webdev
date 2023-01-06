@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+}
+p {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+label {
+    width: 200px;
+    text-align: right;
+}
+img {
+    width: 15px;
+    height: auto;
+}
+input,select {
+    width: 300px;
+    flex-grow: 1;
+}

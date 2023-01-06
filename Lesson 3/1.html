@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>#1</title>
+    <style>
+        *       {font-family: Arial, Helvetica, sans-serif;}
+        legend  {color: blue; font-weight: bold;}
+        fieldset{width: 600px;}
+        
+        label   {display: inline-block;width: 100px; margin: 5px;}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Reservation Request</h1>
+
+    <form action="1.html">
+        <fieldset style="background: #f6f8ff; border: 2px solid #000;">
+          <legend>General Information</legend>
+      
+            <label>Arrival date:</label>
+            <input type="date" id="start" name="trip-start"
+                    value="2018-07-22" min="2018-01-01" max="2018-12-31"> </br>
+
+            <label>Nights:</label>
+            <input type="text" placeholder="Nights" name="nights"> </br>
+
+
+            <label>Adults:</label>
+            <select name="Adults">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select> </br>
+        
+
+            <label>Children:</label>
+            <select name="Adults">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+            </select> </br>
+        </fieldset>
+
+
+        <!-- 2nd -->
+        <fieldset style="background: #f6f8ff; border: 2px solid #000;">
+            <legend>Preferences</legend>
+        
+            <label>Room Type:</label>
+                        <input type="radio" id="standard" name="standard" value="Standard" style="vertical-align: middle; margin: 0px;">
+                        <label for="standard">Standard</label>
+
+
+                        <input type="radio" id="business" name="business" value="Business" style="vertical-align: middle; margin: 0px;">
+                        <label for="business">Business</label>
+
+     
+                        <input type="radio" id="suite" name="suite" value="Suite">
+                        <label for="suite">Suite</label> </br> 
+
+
+            <label>Bed Type:</label>
+                        <input type="radio" id="king" name="king" value="king" style="vertical-align: middle; margin: 0px;">
+                        <label for="king">King</label>
+
+
+                        <input type="radio" id="business" name="business" value="business" style="vertical-align: middle; margin: 0px;">
+                        <label for="business">Business</label> </br> 
+
+            <input type="checkbox" id="smoking" name="smoking" value="smoking" style="vertical-align: middle; margin: 0px;">
+            <label for="smoking">Smoking</label>
+          </fieldset>
+
+
+        <!-- 3rd -->
+        <fieldset style="background: #f6f8ff; border: 2px solid #000;">
+            <legend>Contact Information</legend>
+        
+                <label>Name:</label>
+                <input type="text" name="name"></br>    
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="graceyahoo.com"></br>        
+
+                <label>Phone:</label>
+                <input type="text" placeholder="123-456-789" name="phone"></br>      
+            </p>
+          
+          
+          </fieldset>
+      </form>
+</body>
+</html>

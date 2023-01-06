@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>#2</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        form {
+            width: 600px;
+            margin: auto;
+        }
+        fieldset {
+            border: 1px solid #000;
+        }
+        div {
+            display: flex;
+            width:  100%;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin:15px;
+        }
+        input {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+        }
+        label{
+            width: 150px;
+            text-align: right;
+        }
+        p {
+            display: flex;
+            gap: 10px;
+            width: 300px;
+        }
+        img {
+            width: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <form action=""><fieldset>
+
+            <h3>Personal Information</h3>
+            <div>
+                <label>First Name:</label>
+                <p>
+                    <input type="text" >
+                </p>
+                
+            </div>
+
+            <div>
+                <label>Last Name:</label>
+                <p>
+                    <input type="text" >
+                </p>
+                
+            </div>
+            
+            <div>
+                <label>Date of Birth</label>
+                <p>
+                    <select name="Month">
+                        <option value="">Month</option>
+                        <option value="">January</option>
+                    </select>
+                    <select name="Day">
+                        <option value="">Day</option>
+                        <option value="">1</option>
+                    </select>
+                    <select name="Year">
+                        <option value="">Year</option>
+                        <option value="">2001</option>
+                    </select>
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/2048px-Blue_question_mark_icon.svg.png" alt=""></a>
+                </p>
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <p>
+                    <select name="Gender">
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/2048px-Blue_question_mark_icon.svg.png" alt=""></a>
+                </p>
+            </div>
+
+
+        
+
+            <h3>Account Information</h3>
+            <div>
+                <label>Email:</label>
+                <p>
+                    <input type="text" >
+                </p>
+                
+            </div>
+
+            <div>
+                <label>Re-type Email:</label>
+                <p>
+                    <input type="text">
+                </p>
+                
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <p>
+                    <input type="password" name="" id="">
+                </p>
+                
+            </div>
+
+            <div>
+                <label>Re-type Password:</label>
+                <p>
+                    <input type="password" name="" id="">
+                </p>
+                
+            </div>
+            
+            <div>
+                <label>Security Question</label>
+                <p>
+                    <select name="Month">
+                        <option value="">Choose a security question</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/2048px-Blue_question_mark_icon.svg.png" alt=""></a>
+                </p>
+            </div>
+
+            <div>
+                <label>Security Answer</label>
+                <p>
+                    <input type="text">
+                    <a href="" style="opacity: 0;"></a>
+                    
+                </p>
+            </div>
+        </fieldset></form>
+</body>
+</html>

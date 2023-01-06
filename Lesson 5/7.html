@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>7</title>
+</head>
+<body>
+    
+    <h1>Multiplication & Division</h1>
+    <p>1st Number: <input type="text" id="number1"></p>
+    <p>2nd Number: <input type="text" id="number2"></p>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="division()">Division</button>
+    
+    <p id="result"></p>
+
+    <script>
+    function multiply(x, y) {
+    
+        var num1 =  document.getElementById("number1").value;
+        var num2 =  document.getElementById("number2").value;
+        var x = parseInt(num1);
+        var y = parseInt(num2);
+        var result = x * y;
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function division(x, y) {
+    
+        var num1 =  document.getElementById("number1").value;
+        var num2 =  document.getElementById("number2").value;
+        var x = parseInt(num1);
+        var y = parseInt(num2);
+        var result = x / y;
+        document.getElementById("result").innerHTML = result;
+    }
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Leap Year!</h1>
+    <p>Enter a year: <input type="text" id="year"></p>
+    <button onclick="checkLeapYear()">Check</button>
+    <p id="result"></p>
+
+    <script>
+    
+    function isLeapYear(year) {
+        if (year % 4 !== 0) {
+            return false;
+        } else if (year % 100 !== 0) {
+            return true;
+        } else if (year % 400 !== 0) {
+            return false;
+        } else {
+            return true;
+        }
+        //document.write or console.log
+    }
+
+    //ES4
+    function checkLeapYear() {
+            // Get the year from the textbox
+            var year = document.getElementById("year").value;
+            // Check if the year is a leap year
+            var result = isLeapYear(year);
+            // Display the result
+            if (result) {
+            document.getElementById("result").innerHTML = year + " is a leap year.";
+            } else {
+            document.getElementById("result").innerHTML = year + " is not a leap year.";
+            }
+    }
+    </script>
+</body>
+</html>
