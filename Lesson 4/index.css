@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup_form {
+  background-color: orange;
+  position: relative;
+}
+
+#form-title {
+  color: #d1d44c;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#form-fields {
+  background-color: #222536;
+  color: orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex {
+  col-span: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+table {
+  border-spacing: 20px;
+}
+
+.label {
+  text-align: right;
+}
+
+#buttons-container {
+  background: orange;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  gap: 2px;
+}
+
+.btn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #62af5e;
+}
+
+.cancel-btn {
+  background-color: red;
+}
